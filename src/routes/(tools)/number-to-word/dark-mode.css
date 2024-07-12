@@ -1,0 +1,173 @@
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Display', sans-serif, 'Noto Color Emoji';
+  color: #fff;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+  font-size: 100%;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+.settings-btn .fa-sun,
+.settings-btn .fa-moon {
+  transition: opacity 0.3s ease;
+}
+
+
+.logo {
+  font-size: 1.5em;
+}
+
+.settings-btn {
+  padding: 10px 20px;
+  background-color: #aa0ca5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 3em;
+  color: #aa0ca5;
+}
+
+.intro p {
+  margin: 10px 0;
+}
+
+.learn-more {
+  padding: 10px 20px;
+  background-color: #aa0ca5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.create-room {
+  margin-top: 50px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.create-room h2 {
+  margin-bottom: 20px;
+}
+
+.create-room form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-room label {
+  margin-bottom: 5px;
+}
+
+.create-room input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #111;
+  color: #fff;
+}
+
+.create-room button {
+  padding: 10px 20px;
+  background-color: #aa0ca5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.instructions {
+  margin-top: 20px;
+}
+
+.instructions ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.5em;
+  }
+
+  .learn-more {
+    padding: 8px 16px;
+  }
+
+  .create-room {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .settings-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .learn-more {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .create-room input {
+    padding: 8px;
+  }
+
+  .create-room button {
+    padding: 10px;
+  }
+}
